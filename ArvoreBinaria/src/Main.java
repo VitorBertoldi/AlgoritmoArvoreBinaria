@@ -12,10 +12,10 @@ public class Main {
         arvore.inserir(15);
         arvore.inserir(9);
 
-        arvore.imprimir(arvore.getRaiz());
+        arvore.imprimirArvore();
         arvore.encontrar(10);
 
-        arvore.imprimir(arvore.getRaiz());
+        arvore.imprimirArvore();
 
         }
     }
