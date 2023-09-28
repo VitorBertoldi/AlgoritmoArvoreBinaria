@@ -35,15 +35,13 @@ public class Arvore<T extends Comparable> {
         }
     }
 
-    public void imprimir(No<T> atual, String prefixo, boolean isEsquerda) {
+    public void imprimir(No<T> atual) {
         if (atual != null) {
-            System.out.println(prefixo + (isEsquerda ? "├── " : "└── ") + atual.getvalor());
-            imprimir(atual.getDireita(), prefixo + (isEsquerda ? "│   " : "    "), true);
-            imprimir(atual.getEsquerda(), prefixo + (isEsquerda ? "│   " : "    "), false);
+            imprimir(atual.getEsquerda());
+            System.out.println(atual.getvalor());
+            imprimir(atual.getDireita());
         }
-    }
-    public void imprimirArvore() {
-        imprimir(raiz, "", false);
+
     }
 
     public void encontrar(T valor) {

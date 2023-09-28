@@ -13,10 +13,15 @@ public class Main {
         arvore.inserir(15);
         arvore.inserir(9);
 
+<<<<<<< HEAD
         arvore.imprimirArvore();
         arvore.encontrar(6);
+=======
+        arvore.imprimir(arvore.getRaiz());
+        arvore.encontrar(10);
+>>>>>>> parent of 1ce87fe (Add metodo impressao)
 
-        arvore.imprimirArvore();
+        arvore.imprimir(arvore.getRaiz());
 
         }
     }
